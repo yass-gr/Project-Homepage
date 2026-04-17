@@ -69,9 +69,9 @@ header::before {
   display: block;
   position: absolute;
   width: 200%;
-  height: 60%;
+  height: 100%;
   left: -100px;
-  top: -400px;
+  top: -850px;
   z-index: -1;
   transform: skewY(-30deg);
   background: #4cacc4;
@@ -211,4 +211,55 @@ footer img {
 }
 
 @media (min-width: 768px) {
+  .headerImgContainer {
+    float: left;
+    transform: scale(1.7);
+    width: 250px;
+    height: 300px;
+    margin: 0;
+    margin-right: 112px;
+    margin-bottom: 112px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.316);
+    position: relative;
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      position: absolute;
+      left: 400px;
+      top: 0;
+      width: 400px;
+    }
+  }
+  .txt {
+    background-color: white;
+    h2 {
+      font-size: 2.2rem !important;
+    }
+    position: absolute;
+    top: -200px;
+  }
+  .txt p {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+  }
+  .txt {
+    width: 85%;
+    padding-block: 70px;
+    padding-inline: 50px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.252);
+  }
+  header {
+    margin-top: 500px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 800px;
+  }
+  .txt .icns {
+    justify-content: flex-end;
+  }
 }
